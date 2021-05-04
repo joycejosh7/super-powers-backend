@@ -1,3 +1,4 @@
 class PowerSerializer < ActiveModel::Serializer
-  attributes :id
+  attributes(:id, :content, :hero_id)
+  belongs_to :hero
 end
